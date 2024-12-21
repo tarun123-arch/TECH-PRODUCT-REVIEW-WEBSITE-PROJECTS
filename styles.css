@@ -1,0 +1,158 @@
+/* General Styles */
+body {
+    background-image: url(DarkMode02.webp);
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    /* background-color: #f4f4f9; */
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header Styles */
+.site-header {
+    background-color: #1e1e2f;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.site-header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li {
+    margin-left: 1.5rem;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.navbar ul li a:hover {
+    color: #00bcd4;
+}
+
+/* Hero Section */
+.hero {
+    /* background: linear-gradient(to right, #1e1e2f, #00bcd4);
+    color: #fff; */
+    /* background-image: url(DarkMode02.webp); */
+    color: white;
+    text-align: center;
+    /* padding: 3rem 1rem; */
+    margin-bottom: 2rem;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.cta-button {
+    background-color: #6938bf;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 25px;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #0288d1;
+}
+
+/* Highlights Section */
+.highlights {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card h3 {
+    margin: 1rem 0 0.5rem;
+    font-size: 1.25rem;
+    color: #1e1e2f;
+}
+
+.card p {
+    padding: 0 1rem;
+    color: #555;
+}
+
+.card a {
+    display: inline-block;
+    margin: 1rem 0;
+    text-decoration: none;
+    color: #00bcd4;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.card a:hover {
+    color: #0288d1;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Footer Styles */
+.site-footer {
+    background-color: #1e1e2f;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 0.9rem;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
